@@ -9,7 +9,7 @@ nagios-extensions/notifications
 
 1. Download the scripts and modify the $url and $from variables as appropriate for your nagios URL and the from email address desired.
 2. Make the files executable. 
-3. Also update the following nagios commands with the appropriate location of where you place these 2 files.
+3. Update your nagios `/etc/nagios/objects/commands.cfg` file with the appropriate location of where you place these 2 files. I like to put them in `/etc/nagios/conf.d`
 ```
 define command{ 
 command_name notify-host-by-email 
