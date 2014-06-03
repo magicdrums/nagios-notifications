@@ -1,6 +1,8 @@
 nagios-extensions/notifications
 =================
 
+These are some helpful scripts I have updated to strip out unnecessary stuff and add more functionality.
+
 ## Setup
 
 1. Download the scripts and modify the $url and $from variables as appropriate for your nagios URL and the from email address desired.
