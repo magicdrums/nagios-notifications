@@ -76,7 +76,7 @@
  $body .= "<tr bgcolor=#eeeeee><td><b>Server:</b></td><td><b><a href='https://$url/#cgi-bin/extinfo.cgi?type=1&host=$f_host_name'>$f_host_alias</a></b></td></tr>\r\n";
  $body .= "<tr bgcolor=#fefefe><td><b>Address:</b></td><td><b>$f_host_address</b></font></td></tr>\r\n";
  $body .= "<tr bgcolor=#eeeeee><td><b>Date/Time:</b></td><td>$f_long_date UTC</td></tr>\r\n";
- $body .= "<tr bgcolor=#fefefe><td><b>Additional Info:</b></td><td>$f_serv_output</td></tr>\r\n";
+ $body .= "<tr bgcolor=#fefefe><td><b>Additional Info:</b></td><td><font color=$f_color>$f_serv_output</font></td></tr>\r\n";
  $body .= "<tr bgcolor=#eeeee><td><b>Acknowledgement:</b></td><td> $f_ackauthor : $f_ackcomment</td></tr>\r\n";
  $body .= "<tr bgcolor=#fefefe><td><b>Commands:</b></td><td><a href='https://$url/cgi-bin/cmd.cgi?cmd_typ=6&amp;host=$f_host_name&amp;service=$f_serv_desc'>Disable active checks of this service</a></td></tr>\r\n";
  $body .= "<tr bgcolor=#fefefe><td></td><td><a href='https://$url/cgi-bin/cmd.cgi?cmd_typ=7&amp;host=$f_host_name&amp;service=$f_serv_desc&amp;force_check'>Re-schedule the next check of this service</a></td></tr>\r\n";
