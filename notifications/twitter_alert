@@ -3,7 +3,7 @@ import sys
 import tweepy
 import string
 
-# This information is for the @c2fo_alerts twitter account
+# Input the appropriate values for your Twitter account. 
 API_KEY = '<set one up from dev.twitter.com>'
 API_SECRET = '<set one up from dev.twitter.com>'
 ACCESS_TOKEN = '<set one up from dev.twitter.com>'
