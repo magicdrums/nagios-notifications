@@ -16,6 +16,9 @@ command_name notify-service-by-email
 command_line /etc/nagios/conf.d/service_email "$NOTIFICATIONTYPE$" "$HOSTNAME$" "$HOSTALIAS$" "$HOSTSTATE$" "$HOSTADDRESS$" "$SERVICEOUTPUT$" "$SHORTDATETIME$" "$SERVICEDESC$" "$SERVICESTATE$" "$CONTACTEMAIL$" "$SERVICEDURATIONSEC$" "$SERVICEEXECUTIONTIME$" "$TOTALSERVICESWARNING$" "$TOTALSERVICESCRITICAL$" "$TOTALSERVICESUNKNOWN$" "$LASTSERVICEOK$" "$LASTSERVICEWARNING$" "$SERVICENOTIFICATIONNUMBER$" "$SERVICEACKAUTHOR$" "$SERVICEACKCOMMENT$" 
 }
 ```
+## Screenshots
+![host.png](https://github.com/seancdugan/nagios-notifications/blob/release/host.png) 
+![service.png](https://github.com/seancdugan/nagios-notifications/blob/release/service.png) 
 
 ## Notes
 This sends mail via PHP. I use the ssmtp package to manage the mail settings. https://wiki.archlinux.org/index.php/SSMTP
