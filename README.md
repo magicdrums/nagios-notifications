@@ -17,8 +17,8 @@ command_line /etc/nagios/conf.d/service_email "$NOTIFICATIONTYPE$" "$HOSTNAME$" 
 }
 ```
 ## Screenshots
-![host.png](https://github.com/seancdugan/nagios-notifications/blob/release/host.png) 
-![service.png](https://github.com/seancdugan/nagios-notifications/blob/release/service.png) 
+![host.png](https://raw.githubusercontent.com/seancdugan/nagios-notifications/master/host.png) 
+![service.png](https://raw.githubusercontent.com/seancdugan/nagios-notifications/master/service.png) 
 
 ## Notes
 This sends mail via PHP. I use the ssmtp package to manage the mail settings. https://wiki.archlinux.org/index.php/SSMTP
