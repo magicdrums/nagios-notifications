@@ -37,11 +37,11 @@
  $body .= "<tr bgcolor=#fefefe><td><b>Total Hosts Down: </b></td><td>$f_totaldown</td></tr>\r\n";
  $body .= "<tr bgcolor=#eeeee><td><b>Acknowledgement:</b></td><td> $f_ackauthor : $f_ackcomment</td></tr>\r\n";
  $body .= "<tr bgcolor=#eeeeee><td><b>Actions: </b></td><td><a href='https://$url/cgi-bin/cmd.cgi?cmd_typ=33&host=$f_host_name&service=$f_serv_desc'><b>Acknowledge</b></a></td></tr>\r\n";
- $body .= "<tr bgcolor=#eeeeee><td></td><td><a href='https://$url/cgi-bin/cmd.cgi?cmd_typ=96&host=$f_host_name&service=$f_serv_desc'><b>Re-schedule next check</b></a></td></tr>\r\n";
- $body .= "<tr bgcolor=#eeeeee><td></td><td><a href='https://$url/cgi-bin/cmd.cgi?cmd_typ=55&host=$f_host_name&service=$f_serv_desc'><b>Schedule downtime for host</b></a></td></tr>\r\n";
- $body .= "<tr bgcolor=#eeeeee><td></td><td><a href='https://$url/cgi-bin/cmd.cgi?cmd_typ=86&host=$f_host_name&service=$f_serv_desc'><b>Schedule downtime for all services on host</b></a></td></tr>\r\n";
- $body .= "<tr bgcolor=#eeeeee><td></td><td><a href='https://$url/cgi-bin/cmd.cgi?cmd_typ=25&host=$f_host_name&service=$f_serv_desc'><b>Disable notifications for host</b></a></td></tr>\r\n";
- $body .= "<tr bgcolor=#eeeeee><td></td><td><a href='https://$url/cgi-bin/cmd.cgi?cmd_typ=29&host=$f_host_name&service=$f_serv_desc'><b>Disable notifications for all services on host</b></a></td></tr>\r\n";
+ $body .= "<tr bgcolor=#eeeeee><td></td><td><a href='https://$url/cgi-bin/cmd.cgi?cmd_typ=96&host=$f_host_name&service=$f_serv_desc'><b>Reschedule check</b></a></td></tr>\r\n";
+ $body .= "<tr bgcolor=#eeeeee><td></td><td><a href='https://$url/cgi-bin/cmd.cgi?cmd_typ=55&host=$f_host_name&service=$f_serv_desc'><b>Schedule host downtime</b></a></td></tr>\r\n";
+ $body .= "<tr bgcolor=#eeeeee><td></td><td><a href='https://$url/cgi-bin/cmd.cgi?cmd_typ=86&host=$f_host_name&service=$f_serv_desc'><b>Schedule services downtime</b></a></td></tr>\r\n";
+ $body .= "<tr bgcolor=#eeeeee><td></td><td><a href='https://$url/cgi-bin/cmd.cgi?cmd_typ=25&host=$f_host_name&service=$f_serv_desc'><b>Disable host notifications</b></a></td></tr>\r\n";
+ $body .= "<tr bgcolor=#eeeeee><td></td><td><a href='https://$url/cgi-bin/cmd.cgi?cmd_typ=29&host=$f_host_name&service=$f_serv_desc'><b>Disable service notifications</b></a></td></tr>\r\n";
  $body .= "</table></table></body></html> \r\n";
 
  $headers = "From: $from\r\n";
