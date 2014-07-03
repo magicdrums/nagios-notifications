@@ -79,10 +79,10 @@
  $body .= "<tr bgcolor=#fefefe><td><b>Additional Info:</b></td><td><font color=$f_color>$f_serv_output</font></td></tr>\r\n";
  $body .= "<tr bgcolor=#eeeee><td><b>Acknowledgement:</b></td><td> $f_ackauthor : $f_ackcomment</td></tr>\r\n";
  $body .= "<tr bgcolor=#fefefe><td><b>Commands:</b></td><td><a href='https://$url/cgi-bin/cmd.cgi?cmd_typ=34&amp;host=$f_host_name&amp;service=$f_serv_desc'><b>Acknowledge</b></a></td></tr>\r\n";
- $body .= "<tr bgcolor=#fefefe><td></td><td><a href='https://$url/cgi-bin/cmd.cgi?cmd_typ=6&amp;host=$f_host_name&amp;service=$f_serv_desc'><b>Disable active checks of this service</b></a></td></tr>\r\n";
- $body .= "<tr bgcolor=#fefefe><td></td><td><a href='https://$url/cgi-bin/cmd.cgi?cmd_typ=7&amp;host=$f_host_name&amp;service=$f_serv_desc&amp;force_check'><b>Re-schedule the next check of this service</b></a></td></tr>\r\n";
- $body .= "<tr bgcolor=#fefefe><td></td><td><a href='https://$url/cgi-bin/cmd.cgi?cmd_typ=23&amp;host=$f_host_name&amp;service=$f_serv_desc'><b>Disable notifications for this service</b></a></td></tr>\r\n";
- $body .= "<tr bgcolor=#fefefe><td></td><td><a href='https://$url/cgi-bin/cmd.cgi?cmd_typ=56&amp;host=$f_host_name&amp;service=$f_serv_desc'><b>Schedule downtime for this service</b></a></td></tr>\r\n";
+ $body .= "<tr bgcolor=#fefefe><td></td><td><a href='https://$url/cgi-bin/cmd.cgi?cmd_typ=6&amp;host=$f_host_name&amp;service=$f_serv_desc'><b>Disable checks</b></a></td></tr>\r\n";
+ $body .= "<tr bgcolor=#fefefe><td></td><td><a href='https://$url/cgi-bin/cmd.cgi?cmd_typ=7&amp;host=$f_host_name&amp;service=$f_serv_desc&amp;force_check'><b>Reschedule check</b></a></td></tr>\r\n";
+ $body .= "<tr bgcolor=#fefefe><td></td><td><a href='https://$url/cgi-bin/cmd.cgi?cmd_typ=23&amp;host=$f_host_name&amp;service=$f_serv_desc'><b>Disable notifications</b></a></td></tr>\r\n";
+ $body .= "<tr bgcolor=#fefefe><td></td><td><a href='https://$url/cgi-bin/cmd.cgi?cmd_typ=56&amp;host=$f_host_name&amp;service=$f_serv_desc'><b>Schedule downtime</b></a></td></tr>\r\n";
 /*
  $body .= "<tr><td></td><td><a href='https://$url/cgi-bin/cmd.cgi?cmd_typ=30&amp;host=-$f_host_name&amp;service=$f_serv_desc'>Submit passive check result for this service</a></td></tr>\r\n";
  $body .= "<tr><td></td><td><a href='https://$url/cgi-bin/cmd.cgi?cmd_typ=40&amp;host=$f_host_name&amp;service=$f_serv_desc'>Stop accepting passive checks for this service</a></td></tr>\r\n";
