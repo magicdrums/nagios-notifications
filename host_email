@@ -29,13 +29,15 @@
  $body = "<html><body><table border=0 width='98%' cellpadding=0 cellspacing=0><tr><td valign='top'>\r\n";
  $body .= "<table border=0 cellpadding=0 cellspacing=0 width='98%'>";
  $body .= "<tr bgcolor=$f_color><td width='140'><b><font color=#ffffff>Host: </font></b></td><td><font color=#ffffff><b> $f_notify_type [$f_host_state]</b></font></td></tr> \r\n";
+ if($f_ackauthor!="" && $f_ackcomment!=""){
+  $body .= "<tr bgcolor=$f_color><td width='140'><b><font color=#ffffff>$f_ackauthor:</font></b></td><td><font color=#ffffff><b>$f_ackcomment</b></font></td></tr>\r\n";
+ }
  $body .= "<tr bgcolor=#eeeeee><td><b>Hostname: </b></td><td><b><a href='https://$url/#cgi-bin/extinfo.cgi?type=1&host=$f_host_name'>$f_host_alias</a></b></td></tr>\r\n";
  $body .= "<tr bgcolor=#fefefe><td><b>Address: </b></td><td><b>$f_host_address</b></td></tr>\r\n";
  $body .= "<tr bgcolor=#eeeeee><td><b>Date/Time: </b></td><td>$f_long_date</td></tr>\r\n";
  $body .= "<tr bgcolor=#fefefe><td><b>Info: </b></td><td><font color=$f_color>$f_host_output</font></td></tr>\r\n";
  $body .= "<tr bgcolor=#eeeeee><td><b>Total Hosts Up: </b></td><td>$f_totalup</td></tr>\r\n";
  $body .= "<tr bgcolor=#fefefe><td><b>Total Hosts Down: </b></td><td>$f_totaldown</td></tr>\r\n";
- $body .= "<tr bgcolor=#eeeee><td><b>Acknowledgement:</b></td><td> $f_ackauthor : $f_ackcomment</td></tr>\r\n";
  $body .= "<tr bgcolor=#eeeeee><td><b>Actions: </b></td><td><a href='https://$url/cgi-bin/cmd.cgi?cmd_typ=33&host=$f_host_name&service=$f_serv_desc'><b>Acknowledge</b></a></td></tr>\r\n";
  $body .= "<tr bgcolor=#eeeeee><td></td><td><a href='https://$url/cgi-bin/cmd.cgi?cmd_typ=96&host=$f_host_name&service=$f_serv_desc'><b>Reschedule check</b></a></td></tr>\r\n";
  $body .= "<tr bgcolor=#eeeeee><td></td><td><a href='https://$url/cgi-bin/cmd.cgi?cmd_typ=55&host=$f_host_name&service=$f_serv_desc'><b>Schedule host downtime</b></a></td></tr>\r\n";
