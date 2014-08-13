@@ -1,4 +1,4 @@
-nagios-extensions
+nagios-notifications
 =================
 
 ## Setup
